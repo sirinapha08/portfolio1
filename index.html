@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าหลัก | My Portfolio</title>
+    <script src="https://tailwindcss.com"></script>
+</head>
+<body class="bg-[#F3E8FF] text-[#4C1D95] min-height-screen flex flex-col justify-between font-sans">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-[#E9D5FF] p-4 shadow-md">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="font-bold text-xl">My Portfolio</a>
+            <div class="space-x-4">
+                <a href="index.html" class="hover:text-[#7C3AED] font-semibold border-b-2 border-[#7C3AED]">หน้าหลัก</a>
+                <a href="profile.html" class="hover:text-[#7C3AED]">ประวัติส่วนตัว</a>
+                <a href="education.html" class="hover:text-[#7C3AED]">ประวัติการศึกษา</a>
+                <a href="works.html" class="hover:text-[#7C3AED]">ผลงาน/กิจกรรม</a>
+                <a href="contact.html" class="hover:text-[#7C3AED]">ติดต่อฉัน</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto my-12 p-8 bg-white rounded-2xl shadow-xl text-center flex-grow">
+        <div class="w-40 h-40 bg-[#DDD6FE] rounded-full mx-auto mb-6 flex items-center justify-center text-4xl shadow-inner">
+            👤 <!-- ใส่รูปภาพของคุณตรงนี้ เช่น <img src="profile.jpg" class="rounded-full"> -->
+        </div>
+        <h1 class="text-4xl font-bold mb-4">ยินดีต้อนรับสู่ Portfolio ของฉัน</h1>
+        <p class="text-lg text-[#6D28D9] mb-8">เว็บไซต์นี้รวบรวมประวัติ การศึกษา และผลงานต่างๆ ของนักเรียนชั้น ม.6</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-md mx-auto">
+            <a href="profile.html" class="bg-[#C084FC] hover:bg-[#A855F7] text-white font-bold py-3 px-6 rounded-lg shadow transition">ทำความรู้จักฉัน</a>
+            <a href="works.html" class="bg-[#DDD6FE] hover:bg-[#C4B5FD] text-[#4C1D95] font-bold py-3 px-6 rounded-lg shadow transition">ดูผลงานของฉัน</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#E9D5FF] text-center p-4 text-sm mt-auto">
+        <p> น.ส. สิรินภา ผลขำทอง  Portfolio</p>
+    </footer>
+
+</body>
+</html>
