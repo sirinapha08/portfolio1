@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ประวัติการศึกษา | My Portfolio</title>
+    <title>ประวัติส่วนตัว | My Portfolio</title>
     <style>
+        /* ดึงสไตล์เมนูกลับมา */
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, sans-serif; }
         body { background-color: #f9f9f9; color: #333; line-height: 1.6; }
         header { background-color: #2c3e50; position: fixed; width: 100%; top: 0; left: 0; z-index: 1000; }
@@ -14,11 +15,13 @@
         nav ul li { margin-left: 20px; }
         nav ul li a { color: #fff; text-decoration: none; font-size: 16px; }
         nav ul li a:hover, nav ul li a.active { color: #3498db; }
+        /* สไตล์หน้าโปรไฟล์ */
         .container { max-width: 900px; margin: 120px auto 80px auto; padding: 20px; }
         h2 { font-size: 32px; color: #2c3e50; margin-bottom: 30px; border-bottom: 4px solid #3498db; padding-bottom: 10px; display: inline-block; }
-        .card { background: #fff; padding: 25px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-left: 5px solid #3498db; }
-        .card h3 { color: #2c3e50; margin-bottom: 5px; }
-        .card .date { color: #7f8c8d; font-size: 14px; margin-bottom: 10px; }
+        .profile-wrapper { display: flex; align-items: center; gap: 40px; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .profile-img { width: 220px; height: 220px; border-radius: 50%; object-fit: cover; border: 5px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .info h3 { color: #2c3e50; margin-bottom: 10px; }
+        @media (max-width: 600px) { .profile-wrapper { flex-direction: column; text-align: center; } }
     </style>
 </head>
 <body>
@@ -27,8 +30,8 @@
             <a href="index.html" class="logo">MyPortfolio</a>
             <ul>
                 <li><a href="index.html">หน้าแรก</a></li>
-                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
-                <li><a href="education.html" class="active">ประวัติการศึกษา</a></li>
+                <li><a href="profile.html" class="active">ประวัติส่วนตัว</a></li>
+                <li><a href="education.html">ประวัติการศึกษา</a></li>
                 <li><a href="works.html">ผลงานและกิจกรรม</a></li>
                 <li><a href="contact.html">คอนแทค</a></li>
             </ul>
@@ -36,18 +39,16 @@
     </header>
 
     <div class="container">
-        <h2>ประวัติการศึกษา</h2>
-        
-        <div class="card">
-            <h3>ระดับปริญญาตรี - คณะ/สาขา</h3>
-            <div class="date">ปี พ.ศ. 2562 - 2566</div>
-            <p>มหาวิทยาลัยของคุณ - เกรดเฉลี่ยสะสม (ถ้ามี)</p>
-        </div>
-
-        <div class="card">
-            <h3>ระดับมัธยมศึกษาตอนปลาย - สายการเรียน</h3>
-            <div class="date">ปี พ.ศ. 2559 - 2562</div>
-            <p>โรงเรียนของคุณ</p>
+        <h2>ประวัติส่วนตัว</h2>
+        <div class="profile-wrapper">
+            <img src="https://placeholder.com" alt="รูปโปรไฟล์" class="profile-img">
+            <div class="info">
+                <h3>น.ส. สิรินภา ผลขำทอง</h3>
+                <p><strong>ชื่อเล่น:</strong> [แบม]</p>
+                <p><strong>วันเกิด:</strong> [20/12/2551]</p>
+                <p><strong>ความสนใจ:</strong> [ชอบเรียนวิชาคณิตศาสตร์,อ่านหนังสือ,ชอบสัตว์]</p>
+                <p style="margin-top: 15px;">กำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่6/3 อยากเรียนต่อคณะบริหารธุรกิจ สาขาบัญชี</p>
+            </div>
         </div>
     </div>
 </body>
